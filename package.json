@@ -1,0 +1,7 @@
+{
+  "name": "fix-github-https-repo-ps",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Serhii Khoma <srghma@gmail.com>",
+  "license": "MIT"
+}
