@@ -1,3 +1,5 @@
 output
 result
-.psc-package*
+.psc-package/*
+.psc-ide-port
+.spago

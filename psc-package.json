@@ -5,6 +5,7 @@
   "depends": [
     "aff",
     "console",
-    "prelude"
+    "prelude",
+    "spec"
   ]
 }
