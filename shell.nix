@@ -4,6 +4,9 @@
 
 with pkgs;
 
+# TODO:
+# npm install purty purescript-language-server
+
 stdenv.mkDerivation {
   name = "myenv";
   buildInputs = [

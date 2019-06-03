@@ -1,15 +1,19 @@
 module Test.Main where
 
+import Prelude
 import Data.Time.Duration (Milliseconds(..))
 import Effect (Effect)
 import Effect.Aff (launchAff_, delay)
 import Test.Spec (pending, describe, it)
 import Test.Spec.Assertions (shouldEqual)
 import Test.Spec.Reporter.Console (consoleReporter)
-import Test.Spec.Runner (run)
+import Test.Spec.Runner (runSpec)
+import FixGithubHttpsRepo.ParseUrl.Test
 
 main :: Effect Unit
-main = launchAff_ $ run [consoleReporter] do
+main = launchAff_ $ runSpec [consoleReporter] do
+  testParseUrl
+
   describe "purescript-spec" do
     describe "Attributes" do
       it "awesome" do
