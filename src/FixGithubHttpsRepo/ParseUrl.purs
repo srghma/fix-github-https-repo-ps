@@ -11,18 +11,7 @@ import Data.Maybe (Maybe(..), isJust)
 import Data.String.Regex (match, parseFlags)
 import Data.String.Regex.Unsafe (unsafeRegex)
 import Debug.Trace (spy, traceM)
-
-data Url = Url
-  { host     :: String
-  , port     :: Maybe Int
-  , username :: String
-  , repo     :: String
-  }
-
-derive instance genericUrl :: Generic Url _
-
-instance showUrl :: Show Url where show = genericShow
-instance eqUrl :: Eq Url where eq = genericEq
+import FixGithubHttpsRepo.Types (Url(..))
 
 -- TODO: https://github.com/purescript/purescript/issues/888
 parseUrl :: String -> Maybe Url
