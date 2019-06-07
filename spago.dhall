@@ -5,7 +5,15 @@ You can edit this file as you like.
 { name =
     "fix-github-https-repo-ps"
 , dependencies =
-    [ "aff", "console", "effect", "prelude", "psci-support", "spec", "debug" ]
+    [ "aff"
+    , "console"
+    , "debug"
+    , "effect"
+    , "optlicative"
+    , "prelude"
+    , "psci-support"
+    , "spec"
+    ]
 , packages =
     ./packages.dhall
 }

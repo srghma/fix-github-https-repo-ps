@@ -116,6 +116,17 @@ let upstream =
 
 let overrides = {=}
 
-let additions = {=}
+let additions =
+{ optlicative =
+    mkPackage
+      [ "foreign"
+      , "validation"
+      , "record"
+      , "node-process"
+      , "console"
+      ]
+      "https://github.com/garyb/purescript-optlicative.git"
+      "ps-0.13-update"
+}
 
 in  upstream // overrides // additions
