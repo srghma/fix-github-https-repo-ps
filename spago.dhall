@@ -9,10 +9,11 @@ You can edit this file as you like.
     , "console"
     , "debug"
     , "effect"
-    , "optlicative"
+    , "optparse"
     , "prelude"
     , "psci-support"
     , "spec"
+    , "ansi"
     ]
 , packages =
     ./packages.dhall
